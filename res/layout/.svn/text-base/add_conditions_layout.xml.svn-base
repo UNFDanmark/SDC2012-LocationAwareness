@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckedTextView
+        android:id="@+id/timeCheckedTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="Tidspunkt" />
+
+    <Button
+        android:id="@+id/startTimePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Starttid"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/stopTimePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sluttid"
+        android:visibility="gone"/>
+    
+        <Button
+        android:id="@+id/dayPicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dage"
+        android:visibility="gone"/>
+
+    <CheckedTextView
+        android:id="@+id/locationCheckedTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:text="Lokation" />
+
+    <Button
+        android:id="@+id/timeLocationSetDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Færdig" />
+
+</LinearLayout>

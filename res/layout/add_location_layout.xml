@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendDataBackButton"
+        android:layout_alignParentTop="true"
+        android:apiKey="0JTY8fy-8fbbdU_AEo1stP_1ToftzOkqRDzMgvw"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <SeekBar
+        android:id="@+id/seekBarRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:max="1000" />
+
+    <Button
+        android:id="@+id/sendDataBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBarRadius"
+
+        android:layout_marginBottom="14dp"
+        android:text="Færdig" />
+
+    <TextView
+        android:id="@+id/show_progress_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mapView"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+</RelativeLayout>

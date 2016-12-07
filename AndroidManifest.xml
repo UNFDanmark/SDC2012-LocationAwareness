@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dk.unf.sdc.gruppeg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/notofication_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="Location awareness" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddProfileMenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="Tilføj ny profil" >
+        </activity>
+        <activity
+            android:name=".ConditionsMenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="Tilføj nye betingelser" >
+        </activity>
+        <activity
+            android:name=".SetLocationOnMapActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:label="Vælg lokation" >
+        </activity>
+
+        <service android:name=".MainService" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

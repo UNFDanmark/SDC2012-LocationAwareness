@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/optionEdit"
+        android:title="Redigér"/>
+    <item
+        android:id="@+id/optionDelete"
+        android:title="Slet"/>
+    <item
+        android:id="@+id/optionCancel"
+        android:title="Annullér"/>
+
+</menu>

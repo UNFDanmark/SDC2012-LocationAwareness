@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<CheckedTextView 
+    android:id="@+id/list_view_checked_text_view"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="5sp"
+    android:textColor="#000"
+    android:layout_height="fill_parent"
+    android:text="CheckedTextView" />
+</LinearLayout>

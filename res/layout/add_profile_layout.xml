@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Profilnavn"
+        android:capitalize="sentences" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/add_conditions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Betingelser" />
+
+        <ListView
+            android:id="@+id/effects_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_profile_button"
+            android:layout_below="@+id/add_conditions_button" >
+        </ListView>
+
+        <Button
+            android:id="@+id/add_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Tilføj!" />
+    </RelativeLayout>
+
+</LinearLayout>
